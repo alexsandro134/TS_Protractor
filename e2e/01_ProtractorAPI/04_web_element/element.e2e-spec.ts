@@ -80,7 +80,7 @@ describe('TestSuite_01 - Web Element', () => {
         console.log('Pass 2');
 
         // Is Selected (radio / checkbox)
-        expect(deleteAllContactBtns.isEnabled()).toBe(false);
+        expect(deleteAllContactBtns.isSelected()).toBe(false);
         console.log('Pass 3');
 
         // Is Present (all elements) - invisible / visible (in DOM)

@@ -6,13 +6,13 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './01_ProtractorAPI/*/**/*.e2e-spec.ts'
+    './01_ProtractorAPI/05_list_elements/**/*.e2e-spec.ts'
   ],
   suites: {
     first: ['./01_ProtractorAPI/02_first_testcase/**/*.e2e-spec.ts'],
     web_browser: ['./01_ProtractorAPI/03_web_browser/**/*.e2e-spec.ts'],
     web_element: ['./01_ProtractorAPI/04_web_element/**/*.e2e-spec.ts'],
-    list_element: ['./01_ProtractorAPI/05_list_element/**/*.e2e-spec.ts']
+    list_elements: ['./01_ProtractorAPI/05_list_elements/**/*.e2e-spec.ts']
   },
   capabilities: {
     'browserName': 'chrome'
