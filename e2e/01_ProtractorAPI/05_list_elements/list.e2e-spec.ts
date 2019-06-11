@@ -91,6 +91,7 @@ describe('TestSuite_01 - Element Array Finder', () => {
 
         // reduce
         const value = names.reduce(function(acc, elm) {
+            console.log(acc);
             return elm.getText().then(function(text: string) {
                 return acc === '' ? text : acc + ', ' + text;
             });
